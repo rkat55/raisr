@@ -1,13 +1,16 @@
 pragma solidity ^0.4.8;
 
 contract Token {
-    uint256 public totalSupply = 55000000;
-    address public owner = '0x0EFe5fAbF9a561755EcCA1bf0F2213B541BE95E7';
+    uint256 public totalSupply;
+    address public owner; // = '0x0EFe5fAbF9a561755EcCA1bf0F2213B541BE95E7';
     string public name = 'Raisr Coin';
     string public symbol = 'RAISR';
 
     function Token()
     {
+        totalSupply = 55000000;
+        owner = msg.sender;
+        balances[msg.sender] = totalSupply;
     }
 
     function transfer(address _to, uint256 _value) returns (bool success) {
