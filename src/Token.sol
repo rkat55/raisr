@@ -3,7 +3,7 @@ pragma solidity ^0.4.8;
 contract Token {
     uint256 public totalSupply;
     address public owner;
-    string public name = 'Raisr Coin';
+    string public name = 'Raisr Token';
     string public symbol = 'RAISR';
 
     function Token()
