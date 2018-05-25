@@ -1,2 +1,2 @@
 # raisr
-crypto fund raiser RAISR Coin
+CFR RAISR Coin
